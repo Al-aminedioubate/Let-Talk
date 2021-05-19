@@ -49,5 +49,7 @@
 
         <!--le debut de script pour traitement de mot de passe--->
         <script src="javaScript/pass-show-hide.js"></script>
+        <script src="javaScript/signup.js"></script>
+
     </body>
 </html>
