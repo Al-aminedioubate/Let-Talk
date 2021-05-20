@@ -13,7 +13,7 @@
         <div class="wrapper">
             <section class="form signup">
                 <header>RealTime Chap App</header>
-                <form action="#" enctype="multipart/form-data">
+                <form action="#" enctype="multipart/form-data" autocomplete="off">
                     <div class="error-txt"></div>
                     <div class="name-details">
                         <div class="field input">
@@ -43,7 +43,7 @@
                         <input type="submit" value="Contenue to Chat">
                     </div>
                 </form>
-                <div class="link">Already signed up ? <a href="#">Log in now</a></div>
+                <div class="link">Already signed up ? <a href="login.php">Log in now</a></div>
             </section>
         </div>
 

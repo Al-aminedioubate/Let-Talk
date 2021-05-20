@@ -22,7 +22,7 @@
                 //verifions si user a uploader un fichier ou non
                 if(isset($_FILES['image'])){
                     $img_name = $_FILES['image']['name'];                       //recuperation de nom de l'image uploader par l'utilisateur
-                    //$img_type = $_FILES['image']['type'];                       //recuperation de type d'image uploader par l'utilisateur
+                    //$img_type = $_FILES['image']['type'];                     //recuperation de type d'image uploader par l'utilisateur
                     $tmp_name = $_FILES['image']['tmp_name'];                   //le nom temporaire pour le sauvegarde d'images dans la BD
 
                     //recuperation de l'extension d'image
@@ -68,6 +68,6 @@
         }
 
     }else{
-        echo "All input field are required!";
+        echo "Tout les champs sont obligatoires!";
     }
 ?>

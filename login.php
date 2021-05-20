@@ -14,25 +14,26 @@
             <section class="form login">
                 <header>RealTime Chap App</header>
                 <form action="#">
-                    <div class="error-txt">This is an error message!</div>
+                    <div class="error-txt"></div>
                     <div class="field input">
                         <label>Email Address</label>
-                        <input type="text" placeholder="Enter your email">
+                        <input type="text" name="email" placeholder="Enter your email">
                     </div>
                     <div class="field input">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your Password">
+                        <input type="password" name="password" placeholder="Enter your Password">
                         <i class="fas fa-eye"></i>
                     </div>
                     <div class="field button">
                         <input type="submit" value="Contenue to Chat">
                     </div>
                 </form>
-                <div class="link">Not yet signed up ? <a href="#">Signup now</a></div>
+                <div class="link">Not yet signed up ? <a href="index.php">Signup now</a></div>
             </section>
         </div>
 
         <!--le debut de script pour traitement de mot de passe--->
         <script src="javaScript/pass-show-hide.js"></script>
+        <script src="javaScript/login.js"></script>
     </body>
 </html>
