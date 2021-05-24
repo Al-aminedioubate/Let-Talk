@@ -7,3 +7,21 @@ searchBtn.onclick = ()=>{
     searchBar.focuse();
     searchBtn.classList.toggle("active");
 }
+
+setInterval(()=>{
+
+    let xhr = new XMLHttpRequest();     //creation de notre objet XML
+    xhr.open("GET", "php/users.php",true);                //on va utiliser la methode GET ici pour recevoir les donnees 
+
+    xhr.onload = ()=>{
+        if(xhr.readyState === XMLHttpRequest.DONE){
+            if(xhr.status === 200){
+                let data = xhr.responseText;
+               console.log(data);
+               
+            }
+        }
+    }
+    xhr.send();
+
+}, 500);            //cette fonction s'excutera apres a chaque 500ms

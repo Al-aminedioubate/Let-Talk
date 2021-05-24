@@ -42,7 +42,7 @@
 
                             //insertion de toutes les donnees des user dans la table
                             $sql2 = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status)
-                                                VALUES ({$random_id}, '{$fname}','{$lname}','{$email}','{$password}','{$new_img_name}','{ $status}')");
+                                                VALUES ({$random_id}, '{$fname}','{$lname}','{$email}','{$password}','{$new_img_name}','{$status}')");
                             if($sql2){                                                           //si les donnees ont ete bien inserer
                                 $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}' ");
                                 if(mysqli_num_rows($sql3) > 0){
